@@ -26,7 +26,7 @@ namespace Wall\Tools {
  
 	    }
   
-	 	public function write($type="ERROR:",$message="",$hideInfo=false){ 
+	 	public function write($type="ERROR",$message="",$hideInfo=false){ 
 
 		    $this->file = fopen($this->filePath.$this->fileName,"a+"); 
 		     
