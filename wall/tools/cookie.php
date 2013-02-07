@@ -5,8 +5,8 @@
  * Modified: 2013-02-07                               * 
  ******************************************************/ 
 namespace Wall\Tools {
-  class Cookie
-  {
+  
+  class Cookie{
     const Session = null;
     const OneDay = 86400;
     const SevenDays = 604800;
