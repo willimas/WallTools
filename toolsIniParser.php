@@ -6,8 +6,9 @@
  ******************************************************/ 
 
 require 'wall/tools/iniParser.php';
+use Wall\Tools\IniParser;
 
-$cfg = new Wall\Tools\IniParser("config/config.ini"); 
+$cfg = new IniParser("config/config.ini"); 
 
 print_r($cfg->get("Data")); 
 
