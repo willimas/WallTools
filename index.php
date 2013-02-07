@@ -9,12 +9,14 @@ require 'wall/tools/crypt.php';
 require 'wall/tools/iniParser.php';
 require 'wall/tools/logger.php';
 require 'wall/tools/various.php';
+require 'wall/database/database.php';
 
 use \Wall\Tools\Cookie;
 use \Wall\Tools\Crypt;
 use \Wall\Tools\IniParser;
 use Wall\Tools\Logger;
 use Wall\Tools\Various;
+use Wall\Database\Database;
 
 //LOGGER
 $Logger = new Logger(); 
@@ -40,6 +42,12 @@ $iniCfg->save("config/novo_config.ini");
 $Logger->write("ERROR","Error no Log"); 
 $Logger->write("INFO","Terminado item de log"); 
 
+
+$host = 'mysql:host=localhost;dbname=test;charset=UTF-8';
+
+$database = new Database($host,"root","130802","test");
+$result = $database->query("SELECT * FROM book");
+
 ?>
 <html>
 <head>
@@ -52,5 +60,11 @@ $Logger->write("INFO","Terminado item de log");
 <p>Cookie and Encrypt: <?php echo Crypt::encrypt($cookieInfo);?></p>
 <p>Decrypt: <?php echo Crypt::decrypt($item) ?></p>
 <p>Gen Password: <?php echo Various::GeneratePassword(8); ?></p>
+<h2>Database</h2><?php
+foreach ($result as $row) {
+	echo("<p>".$row["title"]."</p>");
+}
+$database->close_connection();
+?>
 </boby>
 </html>
