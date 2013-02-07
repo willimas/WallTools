@@ -1,0 +1,27 @@
+07:09:36:000000	 INFO: Logger teste
+07:09:36:000000	 ERROR: Error no Log
+07:09:36:000000	 INFO: Terminado item de log
+07:09:45:000000	 INFO: Logger teste
+07:09:45:000000	 ERROR: Error no Log
+07:09:45:000000	 INFO: Terminado item de log
+07:09:49:000000	 INFO: Logger teste
+07:09:49:000000	 ERROR: Error no Log
+07:09:49:000000	 INFO: Terminado item de log
+07:10:34, America/Sao_Paulo	 INFO: Logger teste
+07:10:34, America/Sao_Paulo	 ERROR: Error no Log
+07:10:34, America/Sao_Paulo	 INFO: Terminado item de log
+07:12:26, America/Sao_Paulo	::1	INFO: Logger teste
+07:12:26, America/Sao_Paulo	::1	ERROR: Error no Log
+07:12:26, America/Sao_Paulo	::1	INFO: Terminado item de log
+07:12:49 America/Sao_Paulo	::1	INFO: Logger teste
+07:12:49 America/Sao_Paulo	::1	ERROR: Error no Log
+07:12:49 America/Sao_Paulo	::1	INFO: Terminado item de log
+07:15:14 America/Sao_Paulo	::1	INFO: Logger teste
+INFO: Logger teste
+07:15:14 America/Sao_Paulo	::1	ERROR: Error no Log
+ERROR: Error no Log
+07:15:14 America/Sao_Paulo	::1	INFO: Terminado item de log
+INFO: Terminado item de log
+07:15:32 America/Sao_Paulo	::1	INFO: Logger teste
+07:15:32 America/Sao_Paulo	::1	ERROR: Error no Log
+07:15:32 America/Sao_Paulo	::1	INFO: Terminado item de log

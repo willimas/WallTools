@@ -6,7 +6,7 @@
  ******************************************************/ 
 namespace Wall\Tools {
 
-class iniParser { 
+class IniParser { 
 
 	private $_iniFilename = ''; 
     private $_data = array(); 
